@@ -84,7 +84,7 @@ watch(hovered, sync)
           :transition="{ delay: 0.6, duration: 0.5 }"
         >
           <LazyEDarkMatterButton
-            hydrate-on-media-query="(min-width: 768px)"
+            hydrate-on-idle
             class="hidden md:inline-flex"
           />
           <LazyUContentSearchButton hydrate-on-idle />

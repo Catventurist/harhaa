@@ -112,7 +112,7 @@ watch(language, (value) => {
     <template #default>
       <Motion
         as="p"
-        class="hidden text-xs italic text-muted lg:block"
+        class="hidden text-xs italic lg:block"
         :animate="{ opacity: [0.4, 1, 0.4] }"
         :transition="{ duration: 4, repeat: Infinity, ease: 'easeInOut' }"
       >
