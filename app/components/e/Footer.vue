@@ -113,7 +113,7 @@ watch(language, (value) => {
       <Motion
         as="p"
         class="hidden text-xs italic lg:block"
-        :animate="{ opacity: [0.4, 1, 0.4] }"
+        :animate="{ scaleX: [0.8, 1, 0.8] }"
         :transition="{ duration: 4, repeat: Infinity, ease: 'easeInOut' }"
       >
         {{ footerNotice }}
