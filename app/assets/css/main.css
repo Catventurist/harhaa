@@ -1,0 +1,147 @@
+@import "tailwindcss";
+@import "@nuxt/ui";
+
+@source "../../../content/**/*";
+
+@theme static {
+  --font-sans: 'Finlandica', sans-serif;
+  --font-mono: 'Chivo Mono', monospace;
+
+  --animate-blink: blink 1s steps(2) infinite;
+  --animate-type: type 0.4s steps(30) both;
+
+  --color-eu-50: #eef3ff;
+  --color-eu-100: #dce6ff;
+  --color-eu-200: #b9ccff;
+  --color-eu-300: #8aa9f5;
+  --color-eu-400: #5679e0;
+  --color-eu-500: #2a4fbf;
+  --color-eu-600: #153da6;
+  --color-eu-700: #003399;
+  --color-eu-800: #002a80;
+  --color-eu-900: #002066;
+  --color-eu-950: #00123d;
+
+  --color-gold-50: #fffbe6;
+  --color-gold-100: #fff4bf;
+  --color-gold-200: #ffeb85;
+  --color-gold-300: #ffe04d;
+  --color-gold-400: #ffd51f;
+  --color-gold-500: #ffcc00;
+  --color-gold-600: #d6a800;
+  --color-gold-700: #ad8300;
+  --color-gold-800: #8a6700;
+  --color-gold-900: #6e5200;
+  --color-gold-950: #3f2e00;
+
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+:root {
+  --swatch-blue: #3b82f6;
+  --swatch-sky: #0ea5e9;
+  --swatch-indigo: #6366f1;
+  --swatch-violet: #8b5cf6;
+  --swatch-green: #22c55e;
+  --swatch-emerald: #10b981;
+  --swatch-amber: #f59e0b;
+  --swatch-orange: #f97316;
+  --swatch-rose: #f43f5e;
+}
+
+@media print {
+  header,
+  footer,
+  nav,
+  aside,
+  .sidebar,
+  [data-print-hide] {
+    display: none !important;
+  }
+
+  main {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+}
+
+.layout-enter-active {
+  animation: power-on 0.8s ease-out;
+  transform-origin: center;
+}
+
+.layout-leave-active {
+  transition: opacity 0.2s ease-in, filter 0.2s ease-in;
+}
+
+.layout-leave-to {
+  opacity: 0;
+  filter: blur(4px);
+}
+
+@keyframes power-on {
+  0% {
+    transform: scaleY(0.005) scaleX(0.9);
+    filter: brightness(4) blur(6px);
+    opacity: 0;
+  }
+  50% {
+    transform: scaleY(0.005) scaleX(1);
+    filter: brightness(4) blur(3px);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    filter: brightness(1) blur(0);
+  }
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.25s ease, transform 0.25s ease, filter 0.25s ease;
+}
+
+.page-enter-from {
+  opacity: 0;
+  transform: translateY(8px);
+  filter: blur(4px);
+}
+
+.page-leave-to {
+  opacity: 0;
+  transform: translateY(-4px);
+  filter: blur(4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .layout-enter-active,
+  .layout-leave-active,
+  .page-enter-active,
+  .page-leave-active {
+    animation: none;
+    transition: none;
+  }
+}
+
+@keyframes blink { 50% { opacity: 0; } }
+@keyframes type { from { max-width: 0; } to { max-width: 100%; } }
+
+@utility crt {
+  background: radial-gradient(ellipse at center,
+    color-mix(in oklab, var(--ui-primary) 14%, black) 0%,
+    black 120%);
+  color: var(--ui-primary);
+  text-shadow: 0 0 6px color-mix(in oklab, var(--ui-primary) 60%, transparent);
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background: repeating-linear-gradient(0deg, rgb(0 0 0 / .25) 0 1px, transparent 1px 3px);
+  }
+}
