@@ -150,8 +150,8 @@ onMounted(() => {
               />
               <Motion
                 as="span"
-                class="inline-block text-muted"
-                :animate="{ opacity: [1, 0.5], rotate: [0, -2] }"
+                class="inline-block text-default"
+                :animate="{ opacity: [1, 0.6], rotate: [0, -2] }"
                 :transition="{ duration: 0.6, delay: 1.6 }"
               >
                 Diversity

@@ -7,7 +7,7 @@ navigation:
 
 ## Self-regulation
 
-| Standard/Regulation | Who wrote it | Who's regulated by it | Same people? |
+| Standard Regulation | Who wrote it | Who's regulated by it | Same people? |
 |---|---|---|---|
 | WCAG | Microsoft + W3C | Everyone (incl. Microsoft) | **Yes** |
 | AI Act | DG CNECT + CEN/CENELEC JTC 21 | Everyone (incl. the JTC members) | **Yes** |

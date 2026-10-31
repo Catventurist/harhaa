@@ -56,5 +56,10 @@ useSeoMeta({
     >
       <EIconShowcase />
     </UPageSection>
+
+    <UAlert
+      title="Links with - are not optimized for small screens"
+      variant="soft"
+    />
   </div>
 </template>

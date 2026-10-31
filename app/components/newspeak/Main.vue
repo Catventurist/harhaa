@@ -62,11 +62,11 @@ const visible = computed(() => showAll.value ? officialLanguages : officialLangu
             to="/regulation"
           />
           <UButton
-            label="Play the quiz"
+            label="Play Pajatso"
             color="neutral"
             variant="subtle"
             icon="i-lucide-gamepad-2"
-            to="/quiz"
+            to="/test?tab=pajatso"
           />
         </Motion>
       </UContainer>

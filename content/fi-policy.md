@@ -109,7 +109,7 @@ Do not:
 | Youth loneliness | 66% report regular loneliness |
 | Student debt | 525K borrowers, average €12,700, state already paying it off for defaulters |
 | Public sector AI | 20% replaced by 2031, no appeal mechanism |
-| Crypto tax | Bills you 667× your investment |
+| Crypto tax | Bills you 667x your investment |
 | Cash and digital euro | Cash cap plus digital euro closing the last anonymous exit |
 
 ## You own nothing

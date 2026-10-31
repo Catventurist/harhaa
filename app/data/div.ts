@@ -8,7 +8,7 @@ export const headerLinks: NavigationMenuItem[] = [
     icon: 'i-lucide-landmark',
     children: [
       { label: 'Committees', to: '/committees', icon: 'i-lucide-users', description: 'Submit a matter for deliberation.' },
-      { label: 'Voting Chamber', to: '/chamber', icon: 'i-lucide-vote', description: 'One set of ballots, five methods.' },
+      { label: 'Voting Chamber-', to: '/chamber', icon: 'i-lucide-vote', description: 'One set of ballots, five methods.' },
       { label: 'Eucracy', to: '/eucracy', icon: 'i-lucide-building-2', description: 'Who controls what.' }
     ]
   },
@@ -45,7 +45,7 @@ export const headerLinks: NavigationMenuItem[] = [
     children: [
       { label: 'Tests', to: '/test', icon: 'i-lucide-test-tube', description: 'See what you know.' },
       { label: 'Terms', to: '/terms', icon: 'i-lucide-book-a', description: 'Official language, translated.' },
-      { label: 'Compare', to: '/terms/compare', icon: 'i-lucide-table-2', description: 'Same words, other regimes.' },
+      { label: 'Compare-', to: '/terms/compare', icon: 'i-lucide-table-2', description: 'Same words, other regimes.' },
       { label: 'About', to: '/about', icon: 'i-lucide-info', description: 'See what lies beneath.' }
     ]
   }

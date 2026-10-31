@@ -1,7 +1,8 @@
 ---
 title: Tests
 description: Try the same regulation topics from different perspectives.
-icon: i-lucide-flask-conical
+navigation:
+  icon: i-lucide-flask-conical
 ---
 
 ::tip

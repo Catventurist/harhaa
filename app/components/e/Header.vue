@@ -83,7 +83,10 @@ watch(hovered, sync)
           :animate="{ opacity: 1, x: 0 }"
           :transition="{ delay: 0.6, duration: 0.5 }"
         >
-          <LazyEDarkMatterButton hydrate-on-idle />
+          <LazyEDarkMatterButton
+            hydrate-on-media-query="(min-width: 768px)"
+            class="hidden md:inline-flex"
+          />
           <LazyUContentSearchButton hydrate-on-idle />
           <LazyUColorModeButton hydrate-on-idle />
         </Motion>
