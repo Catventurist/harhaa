@@ -1,6 +1,8 @@
 ## Harhaa
 
-United in Diversion. Built with Nuxt UI & Bun. 
+United in Diversion. Satirical site.
+
+Built with **Nuxt UI** & _Bun_.
 
 ## Setup
 
